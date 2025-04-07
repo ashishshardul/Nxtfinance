@@ -1,119 +1,50 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Loans - NXT Finance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>NXT Finance</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    <section id="service-detail">
+        <h2>Personal Loans</h2>
+        <p>Get personalized loans with attractive interest rates to meet your personal financial needs. Whether it's for medical bills, education, or any other personal need, we offer flexible repayment plans.</p>
+        <p><strong>Eligibility Criteria:</strong></p>
+        <ul>
+            <li>Minimum age: 18 years</li>
+            <li>Valid income source</li>
+            <li>Good credit history</li>
+        </ul>
+        <p><strong>Loan Amount:</strong> Up to ₹5,00,000</p>
+        <p><strong>Interest Rates:</strong> Starting from 10% per annum</p>
+        <a href="index.html" class="btn">Go Back</a>
+    </section>
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header .logo h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.hero {
-    background: #555;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 20px;
-}
-
-.hero .btn {
-    background-color: #e64a19;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-#services {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #fff;
-}
-
-#services h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.service {
-    display: inline-block;
-    width: 30%;
-    margin: 0 15px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#about {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-#testimonials {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #fff;
-}
-
-#testimonials h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.testimonial {
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial h4 {
-    font-size: 20px;
-    margin-top: 10px;
-    color: #e64a19;
+    <footer>
+        <p>&copy; 2025 NXT Finance Company. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>9;
 }
 
 #contact {
