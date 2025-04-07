@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Doubt Solver</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+    textarea { width: 100%; padding: 10px; border-radius: 5px; margin-top: 10px; }
+    button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; margin-top: 10px; }
+    .response { margin-top: 20px; background: #f0f0f0; padding: 15px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h2>AI Doubt Solver</h2>
+  <textarea id="question" rows="5" placeholder="Type your doubt here..."></textarea><br>
+  <button onclick="askAI()">Ask AI</button>
+  <div class="response" id="answer"></div>  <script>
+    async function askAI() {
+      const question = document.getElementById('question').value;
+      const answerDiv = document.getElementById('answer');
+      answerDiv.innerHTML = 'Thinking...';
+
+      try {
+        const res = await fetch('https://api.openai.com/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer YOUR_OPENAI_API_KEY'
+          },
+          body: JSON.stringify({
+            model: 'gpt-3.5-turbo',
+            messages: [{ role: 'user', content: question }]
+          })
+        });
+
+        const data = await res.json();
+        const reply = data.choices?.[0]?.message?.content || 'No response';
+        answerDiv.innerHTML = `<strong>Answer:</strong><br>${reply}`;
+      } catch (err) {
+        answerDiv.innerHTML = 'Something went wrong.';
+      }
+    }
+  </script></body>
+</html>
